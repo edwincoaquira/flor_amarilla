@@ -105,7 +105,7 @@ let centerIndex = 0;
 function runPythonCode() {
     if (!drawingCenter) {
         if (i < 16) {
-            for (let step = 0; step < 6 && j < 300; step++) {
+            for (let step = 0; step < 1 && j < 300; step++) {
                 t.color("#ffd700");
                 t.rt(90);
                 t.circle(150 - j * 6, 90);
