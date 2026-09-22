@@ -14,7 +14,6 @@ body {
     height: 50vh;
     max-width: 750px;
     max-height: 750px;
-    transform: translateY(-40px);
     display: flex;
     justify-content: center;
     align-items: center;
