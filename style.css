@@ -12,8 +12,8 @@ body {
     position: relative;
     width: 50vw;
     height: 50vh;
-    max-width: 750px;
-    max-height: 750px;
+    max-width: 650px;
+    max-height: 650px;
     display: flex;
     justify-content: center;
     align-items: center;
