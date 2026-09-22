@@ -2,38 +2,41 @@ body {
     margin: 0;
     background-color: black;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
+    padding: 15px;
+    box-sizing: border-box;
+    overflow-y: auto; /* Permite desplazamiento en celulares pequeños para que nunca se pierda nada */
 }
 
+/* Configuración base adaptable para CELULARES (Pantallas verticales) */
 .canvas-container {
     position: relative;
-    width: 50vw;
-    height: 50vh;
-    max-width: 650px;
-    max-height: 650px;
+    width: 85vw;
+    height: 85vw;
+    max-width: 450px;
+    max-height: 450px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 15px;
 }
 
 canvas {
     width: 100%;
     height: 100%;
+    object-fit: contain;
     display: block;
 }
 
 .message {
-    position: absolute;
-    bottom: 20px;
     width: 100%;
     text-align: center;
-    /* Fuente Times New Roman clásica con elegancia */
     font-family: 'Times New Roman', Times, serif;
     color: #ffd700;
-    font-size: 20px;
+    font-size: 15px; /* Texto pequeño y elegante para celular */
     font-style: italic;
     font-weight: bold;
     text-shadow: 0 0 12px rgba(255, 215, 0, 0.7);
@@ -45,4 +48,25 @@ canvas {
 
 @keyframes fadeIn {
     to { opacity: 1; }
+}
+
+
+        height: 100vh;
+        padding: 0;
+    }
+
+    .canvas-container {
+        position: relative;
+        width: 50vw;
+        height: 50vh;
+        max-width: 650px;
+        max-height: 650px;
+        margin-bottom: 0;
+    }
+
+    .message {
+        position: absolute;
+        bottom: 25px;
+        font-size: 18px; /* Un toque más sutil en PC */
+    }
 }
