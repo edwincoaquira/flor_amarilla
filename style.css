@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.canvas-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    max-width: 750px;
+    max-height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.message {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    /* Fuente Times New Roman clásica con elegancia */
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffd700;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: bold;
+    text-shadow: 0 0 12px rgba(255, 215, 0, 0.7);
+    letter-spacing: 1px;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+    animation-delay: 4s; /* Aparece al terminar la animación */
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
